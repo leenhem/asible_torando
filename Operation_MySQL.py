@@ -16,9 +16,9 @@ class Operation_database(object):
     def Drop_tables(self,table):
         sql = "drop table if exists user"
         self.cursor.execute(sql)
-    def Create_tables(self,a,table):
-        sql = "create table if not exists user(name varchar(128) primary key, created int(10))"
-        a.execute(sql)
+    # def Create_tables(self,a,table):
+    #     sql = "create table if not exists user(name varchar(128) primary key, created int(10))"
+    #     a.execute(sql)
 #     def Insert_tables(self,table):
 #         sql = "insert into user(name,created) values(%s,%s)"
 #         param = ("aaa", Mint(time.time()))
